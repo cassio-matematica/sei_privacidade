@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - SEI +</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(2, 132, 199, 0.1);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: var(--text-main);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .data-atualizacao {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 19px;
+      color: var(--primary-dark);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .destaque-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .destaque-box p {
+      color: #166534;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <span class="badge">Privacidade e Transparência</span>
+      <h1>Política de Privacidade — SEI +</h1>
+      <div class="data-atualizacao">Última atualização: 21 de setembro de 2026</div>
+    </header>
+
+    <div class="destaque-box">
+      <p>🔒 <strong>Compromisso de Privacidade Local:</strong> A extensão <strong>SEI +</strong> foi projetada segundo o princípio de <em>Processamento Exclusivamente no Dispositivo</em> (On-Device). Nenhum dado do processo, do contribuinte ou do usuário é coletado, monitorado ou transmitido para servidores externos.</p>
+    </div>
+
+    <h2>1. Visão Geral e Objetivo da Extensão</h2>
+    <p>A extensão para navegador <strong>SEI +</strong> tem como objetivo exclusivo auxiliar auditores fiscais e agentes públicos na produtividade e organização das rotinas tributárias no âmbito dos sistemas administrativos municipais e federais (SEI, SIAT, DECWeb e Simples Nacional).</p>
+
+    <h2>2. Dados Manipulados e Processamento Local</h2>
+    <p>A extensão processa temporariamente dados estritamente necessários para o funcionamento de suas ferramentas, conforme descrito abaixo:</p>
+    <ul>
+      <li><strong>Identificação Cadastral do Processo Administrativo:</strong> A extensão realiza a leitura do número do processo administrativo, nome do requerente e número de inscrição imobiliária/CPF/CNPJ diretamente da árvore do processo aberta no SEI pelo usuário, com o único propósito de preencher os modelos de despachos, pareceres e calculadoras fiscais na tela do próprio usuário.</li>
+      <li><strong>Conteúdo das Páginas do SEI:</strong> Textos e tabelas de documentos do processo são interpretados localmente para geração de minutas ou relatórios em PDF solicitados pelo usuário.</li>
+      <li><strong>Informações de Autenticação e Preferências:</strong> Dados de configuração (como preferência de tema escuro/claro, tamanho de fonte) e credenciais de sessão opcionais são armazenados de forma estrita e isolada no repositório de armazenamento local do navegador (<code>chrome.storage.local</code>).</li>
+    </ul>
+
+    <h2>3. Ausência de Transmissão para Servidores Externos</h2>
+    <p>A extensão <strong>não possui infraestrutura de servidores próprios, bancos de dados em nuvem ou serviços de telemetria externa</strong>. Todo e qualquer processamento de dados, cálculos tributários, manipulação de texto e conversão em PDF ocorre 100% dentro do navegador web da estação de trabalho do usuário.</p>
+
+    <h2>4. Permissões Solicitadas no Navegador</h2>
+    <p>As permissões solicitadas no manifesto da extensão atendem ao princípio do privilégio mínimo:</p>
+    <ul>
+      <li><code>activeTab</code>: Acesso à aba ativa do SEI mediante clique do usuário para leitura contextual do processo em análise.</li>
+      <li><code>scripting</code>: Permite a aplicação de temas visuais (alto contraste/modo escuro) e injeção de botões auxiliares nos frames dos sistemas governamentais.</li>
+      <li><code>storage</code>: Utilizada para guardar preferências de visualização e modelos de texto cadastrados pelo usuário.</li>
+      <li><code>tabs</code>: Identifica e foca abas abertas dos sistemas oficiais (SEI e SIAT) para facilitar a alternância entre consultas.</li>
+      <li><code>sidePanel</code>: Permite exibir as calculadoras e modelos no painel lateral nativo do navegador sem cobrir os documentos.</li>
+      <li><code>downloads</code>: Permite salvar em disco os demonstrativos de cálculo e balancetes fiscais emitidos.</li>
+      <li><code>cookies</code>: Utilizada exclusivamente para verificar se a sessão de trabalho do usuário nos portais municipais autorizados continua ativa.</li>
+      <li><code>host_permissions</code>: Limitadas aos domínios públicos oficiais municipais e federais (<code>*.procempa.com.br</code>, <code>*.portoalegre.rs.gov.br</code>, <code>*.receita.fazenda.gov.br</code> e <code>*.simplesnacional.fazenda.gov.br</code>).</li>
+    </ul>
+
+    <h2>5. Compartilhamento e Venda de Dados</h2>
+    <p>Em total conformidade com as Políticas do Programa de Desenvolvedores da Chrome Web Store e a Lei Geral de Proteção de Dados (LGPD - Lei Federal nº 13.709/2018):</p>
+    <ul>
+      <li><strong>Não vendemos nem comercializamos</strong> quaisquer dados de usuários ou de contribuintes a terceiros.</li>
+      <li><strong>Não transferimos</strong> informações para fins publicitários, de marketing, de crédito ou rastreamento.</li>
+      <li><strong>Não utilizamos código remoto</strong>; todos os scripts executados estão integralmente empacotados na extensão.</li>
+    </ul>
+
+    <h2>6. Retenção e Exclusão de Dados</h2>
+    <p>O usuário pode, a qualquer momento, apagar todos os modelos, preferências e credenciais salvas clicando nos botões de limpeza na aba de configurações da extensão ou simplesmente desinstalando a extensão de seu navegador.</p>
+
+    <h2>7. Contato</h2>
+    <p>Para dúvidas ou esclarecimentos sobre esta Política de Privacidade, entre em contato diretamente através do repositório oficial da extensão no GitHub ou com a equipe de desenvolvimento institucional.</p>
+
+    <footer>
+      SEI + &copy; 2026 — Extensão de Produtividade e Suporte à Fiscalização Tributária.
+    </footer>
+  </main>
+
+</body>
+</html>
